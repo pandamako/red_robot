@@ -53,6 +53,7 @@ class Robot
   end
 
   def report
+    return unless @is_placed
     puts "#{@x}, #{@y}, #{direction.upcase}"
   end
 
